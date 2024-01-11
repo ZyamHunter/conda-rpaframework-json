@@ -1,0 +1,17 @@
+{
+    "orders": [
+        {
+            "id": "order-001",
+            "items": [
+                {"name": "Item A", "price": 10.0},
+                {"name": "Item B", "price": 20.0}
+            ]
+        },
+        {
+            "id": "order-002",
+            "items": [
+                {"name": "Item C", "price": 15.0}
+            ]
+        }
+    ]
+}

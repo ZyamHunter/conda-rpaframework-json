@@ -1,0 +1,21 @@
+{
+    "clients": [
+        {
+            "name": "Johnny Example",
+            "email": "john@example.com",
+            "orders": [
+                {"address": "Streetroad 123", "state": "TX", "price": 103.20, "id":"guid-001"},
+                {"address": "Streetroad 123", "state": "TX", "price": 98.99, "id":"guid-002"}
+            ]
+        },
+        {
+            "name": "Jane Example",
+            "email": "jane@example.com",
+            "orders": [
+                {"address": "Waypath 321", "state": "WA", "price": 22.00, "id":"guid-003"},
+                {"address": "Streetroad 123", "state": "TX", "price": 2330.01, "id":"guid-004"},
+                {"address": "Waypath 321", "state": "WA", "price": 152.12, "id":"guid-005"}
+            ]
+        }
+    ]
+}

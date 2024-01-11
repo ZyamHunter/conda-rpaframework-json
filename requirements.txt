@@ -1,0 +1,5 @@
+robotframework==6.1.1
+rpaframework==28.0.0
+robotframework-tidy==4.8.0
+python-dotenv==1.0.0
+jsonpath-ng==1.6.0

@@ -13,20 +13,20 @@ Repositório de testes dedicados ao uso da biblioteca rpaframework com json util
 
 Certifique-se de ter o Python 3.10 instalado em seu sistema. Você pode baixá-lo no [site oficial do Python](https://www.python.org/).
 
-## 2. Instalar Ambiente Virtual
-
-Instale a ferramenta `virtualenv` para criar ambientes virtuais de aprendizado:
-
-- pip install virtualenv
+## 2. Instalar Conda para gerenciamento de projeto
+Acesse o site e para o seu dispositivo: https://docs.conda.io/projects/conda/en/latest/
+- https://www.anaconda.com/installation-success?source=installer
+- https://conda.io/projects/conda/en/latest/user-guide/getting-started.html
 
 ## 3. Criar um ambiente virtual:
-- python -m venv project-venv
+- conda create -n project-venv
 
 ## 4. Se você estiver usando o PowerShell e encontrar problemas para executar scripts, talvez precise alterar a política de execução temporariamente para permitir a execução de scripts:
 - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 ## 5. Ativar o ambiente virtual:
-- .\project-venv\Scripts\activate
+- conda init nome-do-shell
+- conda activate project-venv
 
 ## 6. Remover cache do pip
 - pip cache remove *
@@ -35,7 +35,7 @@ Instale a ferramenta `virtualenv` para criar ambientes virtuais de aprendizado:
 - robot -d logs ./src
 
 ## 8. Desativar ambiente virtual
-- deactivate
+- conda deactivate
 
 ## 9. Instalar Node.js:
 - https://nodejs.org/en/download
