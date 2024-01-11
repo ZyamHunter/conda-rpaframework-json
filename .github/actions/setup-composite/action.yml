@@ -20,25 +20,3 @@ runs:
       shell: bash
       run: |
         pip install -r requirements.txt
-
-        echo Instalando o Node.js
-        curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-        sudo apt-get install -y nodejs
-        
-    - name: Restaurar Cache do npm
-      uses: actions/cache@v3
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-npm-
-
-    - name: Instalar Dependências do Node.js
-      shell: bash
-      run: npm install
-
-    - name: Salvar Cache do npm
-      uses: actions/cache@v3
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
