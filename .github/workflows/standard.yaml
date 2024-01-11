@@ -28,7 +28,6 @@ env:
 jobs:
   ci_json:
     name: CI - Test json
-    if: always ()
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout
@@ -37,30 +36,17 @@ jobs:
         uses: ./.github/actions/setup-composite
       - name: 🧪 Run json Robot tests
         run: |
-          robot -d json ./src/Robot/Clients/Json.robot
-        continue-on-error: true
-      - name: ⬆️ Upload json Test results
-        uses: actions/upload-artifact@v4
-        with:
-          name: json-report
-          path: json
+          python run_tests.py
 
   report_slack:
     name: CI - Send Test Status to Slack
     needs: [ci_json]
-    if: always ()
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout
         uses: actions/checkout@v3
       - name: ⚙️ Default Steps
         uses: ./.github/actions/setup-composite
-      - name: ⬇️ Download Artifacts
-        uses: actions/download-artifact@v4
-      - run: ls
-      - name: 📁 Rename paths
-        run: |
-          mv json-report json
       - name: 📨 Run Curl Message To Slack
         run:
           # robot ./Helpers/Curl_Slack.robot
