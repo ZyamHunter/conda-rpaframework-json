@@ -3,7 +3,7 @@ from resources.json_operations import JsonOperations
 import unittest
 import copy
 
-class TestJson(unittest.TestCase):
+class TestString(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.cars = '''

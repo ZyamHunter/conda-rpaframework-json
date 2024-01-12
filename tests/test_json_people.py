@@ -4,7 +4,7 @@ import unittest
 import copy
 
 
-class TestJson(unittest.TestCase):
+class TestPeople(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.peoples = JsonOperations.load_json_from_file("assets/peoples.json")

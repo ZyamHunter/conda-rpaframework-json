@@ -3,7 +3,7 @@ from resources.json_operations import JsonOperations
 import unittest
 import copy
 
-class TestJson(unittest.TestCase):
+class TestOrder(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.orders = JsonOperations.load_json_from_file("assets/orders.json")

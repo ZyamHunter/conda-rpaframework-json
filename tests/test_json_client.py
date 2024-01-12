@@ -4,7 +4,7 @@ import unittest
 import copy
 
 
-class TestJson(unittest.TestCase):
+class TestClient(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ID = 'guid-003'
