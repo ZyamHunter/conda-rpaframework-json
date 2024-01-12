@@ -59,6 +59,3 @@ Acesse o site e para o seu dispositivo: https://docs.conda.io/projects/conda/en/
 - Report dos testes no Slack
 
 <br/>
-
-**Executar teste regressivo**
-> npm run json
