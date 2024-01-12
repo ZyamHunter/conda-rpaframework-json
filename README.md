@@ -32,7 +32,7 @@ Acesse o site e para o seu dispositivo: https://docs.conda.io/projects/conda/en/
 - pip cache remove *
 
 ## 7. Rodar os testes
-- robot -d logs ./src
+- python run_tests.py
 
 ## 8. Desativar ambiente virtual
 - conda deactivate
