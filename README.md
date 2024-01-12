@@ -53,9 +53,6 @@ Acesse o site e para o seu dispositivo: https://docs.conda.io/projects/conda/en/
 - Page Object
 - RPA Framework
 - Conda
-- NPM
 - Massa de Dados
-- Geração de Report
-- Report dos testes no Slack
 
 <br/>
